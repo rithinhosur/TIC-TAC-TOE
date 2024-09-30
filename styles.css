@@ -1,10 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #e0f7fa; /* Soft light blue background */
 }
 
 .container {
@@ -14,27 +14,31 @@ body {
 #board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
-    gap: 5px;
+    gap: 10px;
     margin: 20px auto;
 }
 
 .cell {
     width: 100px;
     height: 100px;
-    background-color: lightblue ;
-    border: 2px solid #333;
+    background-color: #ffffff; /* White background for cells */
+    border: 2px solid #00796b; /* Teal border */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 36px; /* Larger font size */
+    color: #004d40; /* Darker teal text color */
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transitions */
 }
 
 .cell:hover {
-    background-color: #f0f0f0;
+    background-color: #b2ebf2; /* Light blue on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
 }
 
 #message {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 24px; /* Larger message font size */
+    color: #d32f2f; /* Red color for messages */
 }
